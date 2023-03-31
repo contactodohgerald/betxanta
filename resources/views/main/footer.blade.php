@@ -36,7 +36,7 @@
                 <div class="col-12">
                     <div class="copyright">
                         <div class="copy-area">
-                            <p> Copyright &copy; <a href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a> | Designed by
+                            <p> Copyright &copy; <a href="{{ url('/') }}">{{ config('app.name', 'Betxanta') }}</a> | Designed by
                                 <a href="https://contactxanta.com/" target="_blank" class="auth">Contactxanta</a>
                             </p>
                         </div>

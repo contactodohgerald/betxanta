@@ -15,11 +15,25 @@
             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
-
+        <div class="mt-4">
+            <x-input-label for="country" :value="__('Country')" />
+            <select name="country" id="country" required>
+                @forelse ($country as $countries)
+                    <option value="{{ $countries->id }}">{{ $countries->name }}</option>
+                @empty
+                    <option value="">No Data At Moment</option>
+                @endforelse
+            </select>
+            <x-input-error :messages="$errors->get('country')" class="mt-2" />
+        </div>
+        <div class="mt-4">
+            <x-input-label for="referred" :value="__('Referral Code (Optional)')" />
+            <x-text-input id="referred" class="block mt-1 w-full" type="text" name="referred" :value="old('referred')"/>
+            <x-input-error :messages="$errors->get('referred')" class="mt-2" />
+        </div>
         <!-- Password -->
         <div class="mt-4">
             <x-input-label for="password" :value="__('Password')" />
-
             <x-text-input id="password" class="block mt-1 w-full"
                             type="password"
                             name="password"

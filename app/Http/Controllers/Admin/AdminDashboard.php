@@ -56,6 +56,7 @@ class AdminDashboard extends Controller
     public function viewCategoryPage()
     {    
         $view =  [
+            '_user' => $this->user(),
             'country' => $this->getCountry(),
             'category' => $this->category->simplePaginate(8),
             'currency' => $this->currencyRate->all(),
@@ -66,6 +67,7 @@ class AdminDashboard extends Controller
     public function leaguePage(): View
     {    
         $view =  [
+            '_user' => $this->user(),
             'country' => $this->getCountry(),
             'category' => $this->category->all(),
             'subcategory' => $this->league->simplePaginate(10),
@@ -135,6 +137,7 @@ class AdminDashboard extends Controller
 
     public function teamPage(){ 
         $view =  [
+            '_user' => $this->user(),
             'country' => $this->getCountry(),
             'category' => $this->category->all(),
             'leagues' => $this->league->all(),

@@ -1,5 +1,5 @@
 {
-    "name": "xanta/bets",
+    "name": "bet/xanta",
     "type": "project",
     "description": "Our platform has been designed from the ground up to be tailored to the unique form of betting and settlement. Bet against fellow Players on who wins, loses or draws a match with equal stakes.  Follow these simple steps and make profits! Open a ticket by selecting an event and choosing the outcome, then stake the amount of your choice and submit. Another Player will bet against your ticket with an equal stake. The ticket is then closed pending the live outcome of the event. The player with the winning outcome wins the total stake (Minus Betwewe 5% Service Charge) Or You can select an already open ticket with the opposite of your selection and bet against.",
     "keywords": ["framework", "laravel"],

@@ -76,7 +76,7 @@ class PaystackPaymentController extends Controller
             'user_id' => $user->id,
             'reference' => $data['reference'],
             'type' => 'wallet-deposit',
-            'amount' => $amount['amount'],
+            'amount' => $amount,
             'status' => $response['status'],
             'mode' => 'Paystack with '.$data['channel'],
             'ramarks' => 'You account was successfully credited on the '.$data['paid_at'],

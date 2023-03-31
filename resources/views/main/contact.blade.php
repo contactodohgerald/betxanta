@@ -77,8 +77,8 @@
                                         <img src="{{ asset('images/mobile-phone.png') }}" height="80" width="80" alt="icon">
                                     </div>
                                     <div class="type-body">
-                                        <p>To Contact our call center, dial 01-3306666 or 0-15158888 or 01-2525555 or 08099990939</p>
-                                        <p>(Operating hours are 08:00 to 21:00).</p>
+                                        <p>To Send {{ config('app.name', 'Betxanta') }}  message on WhatsApp, <a href="https://wa.me/2348187238690?text=welcome to betxanta, how can we be of help / services to you?" target="_blank">+2348187238690</a> </p>
+                                        <p>(Operating hours are 07:00am to 22:00pm).</p>
                                     </div>
                                 </div>
                                 <div class="contact-body twitter">
@@ -88,7 +88,7 @@
                                     <div class="type-body">
                                         <p>Have a quick question for us?</p>
                                         <p>Get in touch through our Twitter customer service here:</p>
-                                        <p><a href="https://twitter.com/xanta_codes">https://twitter.com/XantabetHelp</a></p>
+                                        <p><a href="https://twitter.com/xanta_codes">https://twitter.com/betxanta-help</a></p>
                                     </div>
                                 </div>
                                 <div class="contact-body address">

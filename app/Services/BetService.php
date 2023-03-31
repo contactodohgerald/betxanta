@@ -16,7 +16,7 @@ class BetService{
             'game_id' => $data['gamesId'],
             'league_id' => $data['leaguesId'],
             'category_id' => $data['categoriesId'],
-            'bet_amt' => $amount['amount'],
+            'bet_amt' => $amount,
             'first_team' => ($data['betOption'] == 'firstTeam') ? $data['userId'] : null,
             'draw' => $data['betOption'] == 'draw' ? $data['userId'] : null,
             'last_team' => ($data['betOption'] == 'lastTeam') ? $data['userId'] : null,

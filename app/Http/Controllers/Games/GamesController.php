@@ -44,6 +44,7 @@ class GamesController extends Controller
         }
 
         $view = [
+            '_user' => $this->user(),
             'country' => $this->getCountry(),
             'categories' => $categories,
             'currency' => $this->currencyRate->all(),
@@ -55,6 +56,7 @@ class GamesController extends Controller
     {
 
         $view = [
+            '_user' => $this->user(),
             'teams' => $this->team->where('league_id' , $id)->get(),
             'league' =>$this->league->where('id', $id)->first(),
             'currency' => $this->currencyRate->all(),

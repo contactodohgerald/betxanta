@@ -252,7 +252,7 @@
                                                         <div class="row">
                                                             <div class="col-12">
                                                                 <div class="single-input">
-                                                                    <label for="name">Full Name</label>
+                                                                    <label for="name">Full Name</label> 
                                                                     <input type="text" id="name" placeholder="Full Name" name="name" :value="old('name')" required  autocomplete="name" autofocus>
                                                                     <x-input-error :messages="$errors->get('name')" class="mt-2" />
                                                                 </div> 
@@ -296,26 +296,6 @@
                                                     </form>
                                                     <div class="bottom-area text-center">
                                                         <p>Already have an member ? <a href="javascript:void(0)" class="log-btn">Login</a></p>
-                                                    </div>
-                                                    <div class="counter-area">
-                                                        <div class="single">
-                                                            <div class="icon-area">
-                                                                <img src="images/icon-signup-counter-icon-1.png" alt="icon">
-                                                            </div>
-                                                            <div class="text-area">
-                                                                <p>25,179k</p>
-                                                                <p class="mdr">Bets</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="single">
-                                                            <div class="icon-area">
-                                                                <img src="images/icon-signup-counter-icon-2.png" alt="icon">
-                                                            </div>
-                                                            <div class="text-area">
-                                                                <p>6.65 BTC</p>
-                                                                <p class="mdr">Total Won</p>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

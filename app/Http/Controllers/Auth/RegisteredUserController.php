@@ -23,7 +23,10 @@ class RegisteredUserController extends Controller
      */
     public function create(): View
     {
-        return view('auth.register');
+        $view = [
+            'country' => $this->getCountry(),
+        ];
+        return view('auth.register', $view);
     }
 
     /**
